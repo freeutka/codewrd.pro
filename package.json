@@ -1,0 +1,9 @@
+{
+  "name": "codewrd-upload",
+  "version": "1.0.0",
+  "description": "Upload function for Codewrd",
+  "main": "functions/upload.js",
+  "dependencies": {
+    "uuid": "^9.0.0"
+  }
+}
