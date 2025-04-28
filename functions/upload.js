@@ -1,4 +1,4 @@
-import { v4 as uuidv4 } from 'uuid';
+const { randomUUID } = require('crypto');
 
 export const onRequestPost = async ({ request, env }) => {
     const formData = await request.formData();
@@ -8,7 +8,7 @@ export const onRequestPost = async ({ request, env }) => {
         return new Response('No file uploaded.', { status: 400 });
     }
 
-    const id = uuidv4();
+    const id = randomUUID();
     const key = `${id}.zip`;
 
     const arrayBuffer = await file.arrayBuffer();
