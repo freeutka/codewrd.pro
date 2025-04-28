@@ -1,0 +1,14 @@
+name = "codewrd-site"
+compatibility_date = "2025-04-28"
+
+[site]
+bucket = "./public"
+
+[[kv_namespaces]]
+binding = "CODEWRD_BUCKET"
+id = "15d0cd2246e4b78e3038cbac91bec817"
+
+[r2_buckets]
+binding = "CODEWRD_BUCKET"
+bucket_name = "codewrd-packs"
+preview_bucket_name = "codewrd-packs"
